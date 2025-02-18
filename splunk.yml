@@ -7,6 +7,5 @@ services:
     - SPLUNK_START_ARGS=--accept-license
     - SPLUNK_PASSWORD=changeme
     volumes:
-    - ./splunk_config:/opt/splunk/etc
     - /var/log/audit/audit.log:/var/log/audit/audit.log:ro
     restart: unless-stopped
