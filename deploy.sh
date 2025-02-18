@@ -1,14 +1,14 @@
 #!/bin/bash
 
-echo "[*] Building and Deploying Honeypot..."
+echo "[*] Installing and Deploying Honeypot..."
 
-# Build the vulnerable honeypot image
-docker build -t honeypot:v1 .
+# Build the honeypot image
+docker build -t honeypot:v3 .
 
 # Run the honeypot container
-docker run -d --name honeypot --privileged --network=host honeypot:v1
+docker run -d --name honeypot --privileged --network=host honeypot:v3
 
-echo "[*] Deploying Splunk Universal Forwarder..."
+echo "[*] Installing and Deploying Splunk Universal Forwarder..."
 docker-compose -f splunk.yml up -d
 
 echo "[*] Deployment Completed. Running Containers:"

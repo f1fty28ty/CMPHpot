@@ -1,0 +1,3 @@
+-w /opt/honeytokens/api_keys.txt -p rwxa -k honeytoken_alert
+-w /opt/honeytokens/credentials.json -p rwxa -k honeytoken_alert
+-w /opt/honeytokens/ssh_private_key.pem -p rwxa -k honeytoken_alert

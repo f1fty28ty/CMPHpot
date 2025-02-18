@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  splunk:
+  splunk-forwarder:
     image: splunk/universalforwarder:latest
     container_name: splunk-forwarder
     environment:
@@ -8,5 +8,5 @@ services:
     - SPLUNK_PASSWORD=changeme
     volumes:
     - ./splunk_config:/opt/splunk/etc
-    - /var/log:/host_logs:ro
+    - /var/log/audit/audit.log:/var/log/audit/audit.log:ro
     restart: unless-stopped
