@@ -71,13 +71,4 @@ nano /opt/honeytokens/ssh_private_key.pem
 ```
 📌 **Alerts will be sent to Splunk!**  
 
----
-
-## **🔥 Next Steps**
-1️⃣ **Would you like automatic IP banning for repeated honey token access?**  
-2️⃣ **Do you want additional traps like fake MySQL queries or decoy web services?**  
-
----
-
-This README now fully reflects the **admin-like honeypot setup** with logging, honey tokens, and Splunk forwarding. 🚀 Let me know if you want any changes!
 
